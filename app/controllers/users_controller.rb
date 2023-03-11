@@ -8,6 +8,9 @@ class UsersController < ApplicationController
 
   # GET /users/1 or /users/1.json
   def show
+    # modified ----
+    @microposts = @user.micropost
+    #--------------
   end
 
   # GET /users/new
